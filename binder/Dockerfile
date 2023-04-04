@@ -4,4 +4,3 @@ ARG BASE_CONTAINER=gnasello/datascience-env:$VERSION
 FROM $BASE_CONTAINER
 
 COPY --chown=${NB_UID}:${NB_GID} scripts "${HOME}"/
-COPY --chown=${NB_UID}:${NB_GID} scripts/r_utils "${HOME}"/scripts
